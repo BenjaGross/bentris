@@ -54,6 +54,9 @@
 		AF18A92325812F2100B8D6CD /* ZShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF18A92225812F2100B8D6CD /* ZShape.swift */; };
 		AF18A92425812F2100B8D6CD /* ZShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF18A92225812F2100B8D6CD /* ZShape.swift */; };
 		AF18A92525812F2100B8D6CD /* ZShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF18A92225812F2100B8D6CD /* ZShape.swift */; };
+		AF18A92A258145D400B8D6CD /* Swiftris.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF18A929258145D400B8D6CD /* Swiftris.swift */; };
+		AF18A92B258145D400B8D6CD /* Swiftris.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF18A929258145D400B8D6CD /* Swiftris.swift */; };
+		AF18A92C258145D400B8D6CD /* Swiftris.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF18A929258145D400B8D6CD /* Swiftris.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +105,7 @@
 		AF18A91425812EDA00B8D6CD /* JShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JShape.swift; sourceTree = "<group>"; };
 		AF18A91B25812EF500B8D6CD /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		AF18A92225812F2100B8D6CD /* ZShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZShape.swift; sourceTree = "<group>"; };
+		AF18A929258145D400B8D6CD /* Swiftris.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swiftris.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +162,7 @@
 				AF18A887257FCC6F00B8D6CD /* GameScene.swift */,
 				AF18A8E72580085500B8D6CD /* Block.swift */,
 				AF18A8EE2580179600B8D6CD /* Shape.swift */,
+				AF18A929258145D400B8D6CD /* Swiftris.swift */,
 				AF18A8F52581292200B8D6CD /* SquareShape.swift */,
 				AF18A8FF25812C9B00B8D6CD /* TShape.swift */,
 				AF18A90625812E9100B8D6CD /* LineShape.swift */,
@@ -338,6 +343,7 @@
 				AF18A91C25812EF500B8D6CD /* File.swift in Sources */,
 				AF18A8F62581292200B8D6CD /* SquareShape.swift in Sources */,
 				AF18A888257FCC6F00B8D6CD /* GameScene.swift in Sources */,
+				AF18A92A258145D400B8D6CD /* Swiftris.swift in Sources */,
 				AF18A91525812EDA00B8D6CD /* JShape.swift in Sources */,
 				AF18A8EF2580179600B8D6CD /* Shape.swift in Sources */,
 				AF18A8DB257FEA0E00B8D6CD /* Array2D.swift in Sources */,
@@ -354,6 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF18A92B258145D400B8D6CD /* Swiftris.swift in Sources */,
 				AF18A90125812C9B00B8D6CD /* TShape.swift in Sources */,
 				AF18A8E92580085500B8D6CD /* Block.swift in Sources */,
 				AF18A89A257FCC7000B8D6CD /* bentrisTests.swift in Sources */,
@@ -372,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF18A92C258145D400B8D6CD /* Swiftris.swift in Sources */,
 				AF18A90225812C9B00B8D6CD /* TShape.swift in Sources */,
 				AF18A8EA2580085500B8D6CD /* Block.swift in Sources */,
 				AF18A8A5257FCC7000B8D6CD /* bentrisUITests.swift in Sources */,
