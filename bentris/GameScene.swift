@@ -8,7 +8,6 @@
 import SpriteKit
 
 let TickLengthLevelOne = TimeInterval(600)
-
 let BlockSize:CGFloat = 20.0
 
 class GameScene: SKScene {
@@ -23,10 +22,6 @@ class GameScene: SKScene {
 
   var textureCache = Dictionary<String, SKTexture>()
 
-  required init(coder aDecoder: NSCoder) {
-    fatalError("NSCoder not supported")
-  }
-
   override init(size: CGSize) {
     super.init(size: size)
 
@@ -35,8 +30,8 @@ class GameScene: SKScene {
     let background = SKSpriteNode(imageNamed: "background")
     background.position = CGPoint(x: 0, y: 0)
     background.anchorPoint = CGPoint(x: 0, y: 1.0)
-
     addChild(background)
+
     addChild(gameLayer)
 
     let gameBoardTexture = SKTexture(imageNamed: "gameboard")
@@ -51,18 +46,21 @@ class GameScene: SKScene {
     run(SKAction.repeatForever(SKAction.playSoundFileNamed("Sounds/theme.mp3", waitForCompletion: true)))
   }
 
+  required init(coder aDecoder: NSCoder) {
+    fatalError("NSCoder not supported")
+  }
+
   func playSound(sound:String) {
     run(SKAction.playSoundFileNamed(sound, waitForCompletion: false))
   }
 
   func animateCollapsingLines(linesToRemove: Array<Array<Block>>, fallenBlocks: Array<Array<Block>>, completion:@escaping () -> ()) {
     var longestDuration: TimeInterval = 0
-
     for (columnIdx, column) in fallenBlocks.enumerated() {
       for (blockIdx, block) in column.enumerated() {
         let newPosition = pointForColumn(column: block.column, row: block.row)
         let sprite = block.sprite!
-        // #3
+
         let delay = (TimeInterval(columnIdx) * 0.05) + (TimeInterval(blockIdx) * 0.05)
         let duration = TimeInterval(((sprite.position.y - newPosition.y) / BlockSize) * 0.1)
         let moveAction = SKAction.move(to: newPosition, duration: duration)
@@ -77,7 +75,6 @@ class GameScene: SKScene {
 
     for rowToRemove in linesToRemove {
       for block in rowToRemove {
-        // #4
         let randomRadius = CGFloat(UInt(arc4random_uniform(400) + 100))
         let goLeft = arc4random_uniform(100) % 2 == 0
 
@@ -108,16 +105,16 @@ class GameScene: SKScene {
     run(SKAction.wait(forDuration: longestDuration), completion:completion)
   }
     
-    override func update(_ currentTime: TimeInterval) {
-      guard let lastTick = lastTick else {
-        return
-      }
-      let timePassed = lastTick.timeIntervalSinceNow * -1000.0
-      if timePassed > tickLengthMillis {
-        self.lastTick = NSDate()
-        
-      }
+  override func update(_ currentTime: TimeInterval) {
+    guard let lastTick = lastTick else {
+      return
     }
+    let timePassed = lastTick.timeIntervalSinceNow * -1000.0
+    if timePassed > tickLengthMillis {
+      self.lastTick = NSDate()
+      tick?()
+    }
+  }
 
   func startTicking() {
     lastTick = NSDate()
@@ -141,7 +138,6 @@ class GameScene: SKScene {
         textureCache[block.spriteName] = texture
       }
       let sprite = SKSpriteNode(texture: texture)
-
       sprite.position = pointForColumn(column: block.column, row:block.row - 2)
       shapeLayer.addChild(sprite)
       block.sprite = sprite

@@ -19,15 +19,10 @@ let LevelThreshold = 500
 
 protocol SwiftrisDelegate {
   func gameDidEnd(swiftris: Swiftris)
-
   func gameDidBegin(swiftris: Swiftris)
-
   func gameShapeDidLand(swiftris: Swiftris)
-
   func gameShapeDidMove(swiftris: Swiftris)
-
   func gameShapeDidDrop(swiftris: Swiftris)
-
   func gameDidLevelUp(swiftris: Swiftris)
 }
 

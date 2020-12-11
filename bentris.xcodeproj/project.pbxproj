@@ -48,9 +48,9 @@
 		AF18A91525812EDA00B8D6CD /* JShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF18A91425812EDA00B8D6CD /* JShape.swift */; };
 		AF18A91625812EDA00B8D6CD /* JShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF18A91425812EDA00B8D6CD /* JShape.swift */; };
 		AF18A91725812EDA00B8D6CD /* JShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF18A91425812EDA00B8D6CD /* JShape.swift */; };
-		AF18A91C25812EF500B8D6CD /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF18A91B25812EF500B8D6CD /* File.swift */; };
-		AF18A91D25812EF500B8D6CD /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF18A91B25812EF500B8D6CD /* File.swift */; };
-		AF18A91E25812EF500B8D6CD /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF18A91B25812EF500B8D6CD /* File.swift */; };
+		AF18A91C25812EF500B8D6CD /* SShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF18A91B25812EF500B8D6CD /* SShape.swift */; };
+		AF18A91D25812EF500B8D6CD /* SShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF18A91B25812EF500B8D6CD /* SShape.swift */; };
+		AF18A91E25812EF500B8D6CD /* SShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF18A91B25812EF500B8D6CD /* SShape.swift */; };
 		AF18A92325812F2100B8D6CD /* ZShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF18A92225812F2100B8D6CD /* ZShape.swift */; };
 		AF18A92425812F2100B8D6CD /* ZShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF18A92225812F2100B8D6CD /* ZShape.swift */; };
 		AF18A92525812F2100B8D6CD /* ZShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF18A92225812F2100B8D6CD /* ZShape.swift */; };
@@ -103,7 +103,7 @@
 		AF18A90625812E9100B8D6CD /* LineShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineShape.swift; sourceTree = "<group>"; };
 		AF18A90D25812EAF00B8D6CD /* LShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LShape.swift; sourceTree = "<group>"; };
 		AF18A91425812EDA00B8D6CD /* JShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JShape.swift; sourceTree = "<group>"; };
-		AF18A91B25812EF500B8D6CD /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		AF18A91B25812EF500B8D6CD /* SShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SShape.swift; sourceTree = "<group>"; };
 		AF18A92225812F2100B8D6CD /* ZShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZShape.swift; sourceTree = "<group>"; };
 		AF18A929258145D400B8D6CD /* Swiftris.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swiftris.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -168,7 +168,7 @@
 				AF18A90625812E9100B8D6CD /* LineShape.swift */,
 				AF18A90D25812EAF00B8D6CD /* LShape.swift */,
 				AF18A91425812EDA00B8D6CD /* JShape.swift */,
-				AF18A91B25812EF500B8D6CD /* File.swift */,
+				AF18A91B25812EF500B8D6CD /* SShape.swift */,
 				AF18A92225812F2100B8D6CD /* ZShape.swift */,
 				AF18A889257FCC6F00B8D6CD /* GameViewController.swift */,
 				AF18A8DA257FEA0E00B8D6CD /* Array2D.swift */,
@@ -340,7 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF18A90E25812EAF00B8D6CD /* LShape.swift in Sources */,
-				AF18A91C25812EF500B8D6CD /* File.swift in Sources */,
+				AF18A91C25812EF500B8D6CD /* SShape.swift in Sources */,
 				AF18A8F62581292200B8D6CD /* SquareShape.swift in Sources */,
 				AF18A888257FCC6F00B8D6CD /* GameScene.swift in Sources */,
 				AF18A92A258145D400B8D6CD /* Swiftris.swift in Sources */,
@@ -366,7 +366,7 @@
 				AF18A89A257FCC7000B8D6CD /* bentrisTests.swift in Sources */,
 				AF18A8DC257FEA0E00B8D6CD /* Array2D.swift in Sources */,
 				AF18A91625812EDA00B8D6CD /* JShape.swift in Sources */,
-				AF18A91D25812EF500B8D6CD /* File.swift in Sources */,
+				AF18A91D25812EF500B8D6CD /* SShape.swift in Sources */,
 				AF18A90F25812EAF00B8D6CD /* LShape.swift in Sources */,
 				AF18A8F72581292200B8D6CD /* SquareShape.swift in Sources */,
 				AF18A92425812F2100B8D6CD /* ZShape.swift in Sources */,
@@ -385,7 +385,7 @@
 				AF18A8A5257FCC7000B8D6CD /* bentrisUITests.swift in Sources */,
 				AF18A8DD257FEA0E00B8D6CD /* Array2D.swift in Sources */,
 				AF18A91725812EDA00B8D6CD /* JShape.swift in Sources */,
-				AF18A91E25812EF500B8D6CD /* File.swift in Sources */,
+				AF18A91E25812EF500B8D6CD /* SShape.swift in Sources */,
 				AF18A91025812EAF00B8D6CD /* LShape.swift in Sources */,
 				AF18A8F82581292200B8D6CD /* SquareShape.swift in Sources */,
 				AF18A92525812F2100B8D6CD /* ZShape.swift in Sources */,
